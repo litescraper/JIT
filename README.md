@@ -50,6 +50,11 @@ deep research, daily work, planning, and workspace tasks.
 
 ## Repository layout
 
+For web searches, set `SERPER_BASE_URL` to a compatible API base (without
+`/search`) and `SERPER_API_KEY` to the provider's key. The default is
+`https://google.serper.dev`; trailing slashes are removed before adding `/search`.
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others).
+
 | Directory | What it holds |
 |---|---|
 | [`jit/`](jit/) | The meta agent: generation / repair prompts, best-of-N selection |
